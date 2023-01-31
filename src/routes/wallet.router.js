@@ -37,4 +37,18 @@ walletRouter.post('/btc', async (req, res) => {
 
 })
 
+walletRouter.post('/ltc', async (req, res) => {
+    try {
+        const { mnemonic } = req.body
+        const walletFactory = WalletFactory.getStrategy('litecoin', {mnemonic})
+        const { address } = await walletFactory.generateAddressWallet()
+        console.log('address: ', address)
+        res.status(201).json({address})
+    } catch (error) {
+        console.log(error)
+        res.status(400).json(error)
+    }
+
+})
+
 module.exports = walletRouter
