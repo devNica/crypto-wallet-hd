@@ -1,0 +1,35 @@
+{
+  "name": "crypto-wallet-hd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devNica/crypto-wallet-hd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devNica/crypto-wallet-hd/issues"
+  },
+  "homepage": "https://github.com/devNica/crypto-wallet-hd#readme",
+  "dependencies": {
+    "bip32": "^2.0.6",
+    "bip39": "^3.0.4",
+    "bitcoinjs-lib": "^6.1.0",
+    "bitcore-lib": "^8.25.40",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "ethereumjs-util": "^7.1.5",
+    "ethereumjs-wallet": "^1.0.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
